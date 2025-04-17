@@ -6,11 +6,11 @@ class NumberOfEvenNums {
         System.out.println("The number of even no is"+findNumbers(nums));
     }
 
-                public int findNumbers(int[] nums){
+                public static int findNumbers(int[] nums){
                 int count = 0;
                 for (int num : nums) {
                     if ((int) (Math.log10(num) + 1) % 2 == 0) {
-                        ans++;
+                        count++;
                     }
                 }
                 return count;
